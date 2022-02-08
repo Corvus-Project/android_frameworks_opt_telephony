@@ -571,6 +571,7 @@ public class PhoneSwitcher extends Handler {
                 .addEnterpriseId(NetworkCapabilities.NET_ENTERPRISE_ID_3)
                 .addEnterpriseId(NetworkCapabilities.NET_ENTERPRISE_ID_4)
                 .addEnterpriseId(NetworkCapabilities.NET_ENTERPRISE_ID_5)
+                .addCapability(NetworkCapabilities.NET_CAPABILITY_NOT_VCN_MANAGED)
                 .setNetworkSpecifier(new MatchAllNetworkSpecifier());
 
         NetworkFactory networkFactory = new PhoneSwitcherNetworkRequestListener(looper, context,
